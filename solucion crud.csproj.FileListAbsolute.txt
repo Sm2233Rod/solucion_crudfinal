@@ -1,0 +1,24 @@
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\base de datos
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\solucion crud.exe.config
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\solucion crud.exe
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\solucion crud.pdb
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\EntityFramework.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\EntityFramework.SqlServer.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\System.Data.SQLite.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\System.Data.SQLite.EF6.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\System.Data.SQLite.Linq.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\EntityFramework.xml
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\EntityFramework.SqlServer.xml
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\System.Data.SQLite.xml
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion crud.csproj.AssemblyReference.cache
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion_crud.Properties.Resources.resources
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion crud.csproj.GenerateResource.cache
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion crud.csproj.CoreCompileInputs.cache
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion.B3381F3B.Up2Date
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion crud.exe
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion crud.pdb
+C:\c# y sqlite CRUD\solucion crud\obj\Debug\solucion_crud.FormClientes.resources
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\Devart.Data.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\Devart.Data.SQLite.dll
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\Devart.Data.xml
+C:\c# y sqlite CRUD\solucion crud\bin\Debug\Devart.Data.SQLite.xml
