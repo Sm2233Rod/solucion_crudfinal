@@ -61,7 +61,7 @@ namespace solucion_crud.logica
                     Sql_basededatos = "update clientes set nombrecliente='"+oCi.nombrecliente+"', " +
                         "apellidocliente='"+oCi.apellidocliente+"', " +
                         "telefono='"+oCi.telefono+"'," +
-                        "ciudad='"+oCi.ciudad+"', " +
+                        "ciudad='"+oCi.ciudad+"' " +
                         "where idcliente='"+oCi.idcliente+"' ";
                    
 
