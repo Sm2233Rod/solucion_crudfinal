@@ -56,16 +56,22 @@ namespace solucion_crud.logica
                     Sql_basededatos = "insert into clientes (nombrecliente,apellidocliente,telefono,ciudad)"+
                        "values ('"+oCi.nombrecliente+"','"+oCi.apellidocliente+"','"+oCi.telefono+"','"+oCi.ciudad+"')";
                 }
-                else //actualizar registro
+                 else if(nopcion == 2) //actualizar registro
                 {
-                    Sql_basededatos = "update clientes set nombrecliente='"+oCi.nombrecliente+"', " +
-                        "apellidocliente='"+oCi.apellidocliente+"', " +
-                        "telefono='"+oCi.telefono+"'," +
-                        "ciudad='"+oCi.ciudad+"' " +
-                        "where idcliente='"+oCi.idcliente+"' ";
-                   
+                 Sql_basededatos = "update clientes set nombrecliente='"+oCi.nombrecliente+"', " +
+                 "apellidocliente='"+oCi.apellidocliente+"', " +
+                 "telefono='"+oCi.telefono+"', " +
+                 "ciudad='"+oCi.ciudad+"' " +
+                 "where idcliente='"+oCi.idcliente+"' ";
+                 }
 
-                }
+                  else if(nopcion == 3) //eliminar cliente
+                 {
+                  Sql_basededatos = "Delete from clientes where idcliente= '" + oCi.idcliente + "' "; 
+
+                  }
+                                Console.WriteLine("Consulta SQL: " + Sql_basededatos);
+
                 
 
                 SQLiteCommand Comando = new SQLiteCommand(Sql_basededatos, SqlCon);
