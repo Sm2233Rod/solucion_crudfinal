@@ -1,4 +1,4 @@
-﻿namespace solucion_crud
+namespace solucion_crud
 {
     partial class FormClientes
     {
@@ -96,6 +96,7 @@
             this.Delete.Text = "Delete";
             this.Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Update
             // 
@@ -115,6 +116,7 @@
             this.Exit.TabIndex = 6;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Buscar
             // 
