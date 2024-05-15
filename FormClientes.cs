@@ -211,6 +211,17 @@ namespace solucion_crud
         {
             this.listadoclientes(textBox1.Text.Trim());
         }
+         private void Buscar_Click(object sender, EventArgs e)
+ {
+     this.listadoclientes(textBox1.Text.Trim());
+     
+ }
+
+ private void Exit_Click(object sender, EventArgs e)
+ {
+     Application.Exit();
+
+ }
     }
 }
 
