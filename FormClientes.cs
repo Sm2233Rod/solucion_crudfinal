@@ -222,6 +222,57 @@ namespace solucion_crud
      Application.Exit();
 
  }
+
+  private void Delete_Click(object sender, EventArgs e)
+ {
+     if (dataGridView1.SelectedRows.Count <= 0)
+     {
+         MessageBox.Show("Por favor, seleccione un cliente para eliminar.", "Aviso del sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+         return;
+     }
+
+     // Obtener los datos del cliente seleccionado en el DataGridView
+     string nombrecliente = dataGridView1.SelectedRows[0].Cells["nombrecliente"].Value.ToString();
+     string apellidocliente = dataGridView1.SelectedRows[0].Cells["apellidocliente"].Value.ToString();
+
+     // Confirmar la eliminación del cliente
+     DialogResult resultado = MessageBox.Show("¿Está seguro de que desea eliminar al cliente: " + nombrecliente + " " + apellidocliente + "?",
+                                               "Confirmar eliminación",
+                                               MessageBoxButtons.YesNo,
+                                               MessageBoxIcon.Question);
+
+     if (resultado == DialogResult.Yes)
+     {
+         // Obtener el ID del cliente
+         L_clientes datosClientes = new L_clientes();
+         int idcliente = datosClientes.ObtenerIdCliente(nombrecliente, apellidocliente);
+
+         if (idcliente != -1)
+         {
+             // Eliminar al cliente
+             R_clientes clienteAEliminar = new R_clientes();
+             clienteAEliminar.idcliente = idcliente;
+
+             L_clientes datos = new L_clientes();
+             string respuesta = datos.Guardar_clientes(3, clienteAEliminar);
+
+             if (respuesta.Equals("ok"))
+             {
+                 // Actualizar la lista de clientes después de la eliminación
+                 this.listadoclientes();
+                 MessageBox.Show("El cliente ha sido eliminado correctamente.", "Aviso del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             }
+             else
+             {
+                 MessageBox.Show("Ocurrió un error al intentar eliminar al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             }
+         }
+         else
+         {
+             MessageBox.Show("El cliente seleccionado no pudo ser encontrado.", "Aviso del sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+         }
+     }
+ }
     }
 }
 
